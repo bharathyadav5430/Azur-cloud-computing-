@@ -1,0 +1,114 @@
+  Azure:
+Azure is Microsoft's cloud computing platform. It provides a wide range of services, like storage, databases, and virtual machines, over the internet. Instead of owning and maintaining physical servers, businesses can use Azure to run applications, store data, and more, all in a flexible, scalable way. It’s like renting a powerful computer in the cloud that you can access from anywhere.
+Decrease the capital expenditure and operational expenditure we use cloud service
+Capex=baying your own infrastructure,big intial investment
+Opex= rent the infrastuture,no intial investment
+Service models:
+ 
+ 
+
+Deployment models:
+
+ 
+Azure offers several deployment models to accommodate different business needs and preferences. These models define how and where your cloud resources are deployed and managed. Here’s a breakdown:
+1. Public Cloud
+What it is:
+•	Resources are owned and operated by a third-party cloud service provider (like Microsoft Azure) and shared with multiple organizations over the internet.
+Key Points:
+•	Cost-Effective: You only pay for what you use, with no need to invest in hardware.
+•	Scalability: Easily scale resources up or down based on demand.
+•	Maintenance-Free: The cloud provider manages hardware and infrastructure.
+Real-Time Example:
+•	A startup uses Azure’s public cloud to host its website, leveraging Azure’s global data centers without owning any physical infrastructure.
+Why Use Public Cloud:
+•	Ideal for businesses looking for flexibility, cost savings, and scalability without the need to manage infrastructure.
+2. Private Cloud
+What it is:
+•	Cloud resources are used exclusively by a single organization. The infrastructure can be hosted on-site or in a data center, but it is not shared with others.
+Key Points:
+•	Enhanced Security: Greater control over security, compliance, and data privacy.
+•	Customization: Infrastructure can be tailored to meet specific business needs.
+•	Dedicated Resources: No sharing of resources with other organizations.
+Real-Time Example:
+•	A bank uses a private cloud to store sensitive financial data, ensuring compliance with strict regulatory requirements.
+•	Why Use Best for organizations with strict security, compliance, or performance needs, like financial institutions or government agencies.
+3. Hybrid Cloud
+Private Cloud:
+What it is:
+•	A combination of public and private clouds, allowing data and applications to be shared between them. This model offers the best of both worlds.
+Key Points:
+•	Flexibility: Businesses can keep sensitive data in a private cloud while using the public cloud for less sensitive operations.
+•	Cost-Effective: Utilize the public cloud for high-volume tasks, reducing the load on the private cloud.
+•	Seamless Integration: Allows for easy movement of workloads between public and private clouds.
+Real-Time Example:
+•	A retail company runs its e-commerce site on the public cloud but stores customer payment information on a private cloud for enhanced security.
+Why Use Hybrid Cloud:
+•	Suitable for organizations that want to balance security with cost-efficiency and scalability.
+•	Ideal for businesses with fluctuating workloads or sensitive data that must remain on-premises.
+Virtual machines:
+Virtually creating a machines.
+No physical wires involved in connecting by virtual network.
+Collection of subnets is a virtual network
+Security group is nothing but a fire walls.
+1.	On-Demand Computing Power: Azure VMs give you flexible, cloud-based computers that you can start and stop as needed, paying only for the time you use.
+2.	Choose Your Operating System: You can run either Windows or Linux on your Azure VM, just like a physical computer.
+3.	Scalable Resources: Easily increase or decrease your VM's power and storage based on your business needs, ensuring you only pay for what you need.
+4.	Customization and Control: You have full control over your VM, allowing you to install and run any software or application just like on a physical machine.
+5.	Global Reach: Azure VMs can be deployed in data centers around the world, helping you improve performance and accessibility for users no matter where they are.
+Use Cases:
+1.	Development and Testing:
+o	Developers can quickly spin up VMs to test new applications or features in an isolated environment, then shut them down when no longer needed.
+2.	Running Applications:
+o	Businesses can run applications that require specific operating systems or software configurations. For example, running a legacy business application that requires an older version of Windows.
+3.	Disaster Recovery:
+o	VMs can be used for backup and disaster recovery solutions, ensuring that critical applications and data are protected and can be quickly restored.
+4.	Hosting Websites:
+o	Azure VMs can host websites, especially when you need full control over the server environment or need to run custom server-side applications.
+Real-Time Example:
+•	E-Commerce Platform: An online store may use Azure VMs to host its website and database. During peak shopping seasons, the store can easily increase the number of VMs to handle more traffic, and then scale back down afterward to save costs.
+Why Use Azure Virtual Machines?
+•	Flexibility and Control: You have complete control over the computing environment, making it suitable for a wide range of applications and workloads.
+•	Global Reach: Azure’s global data centers ensure that your VMs can be deployed close to your customers, improving performance and reliability.
+•	Security: Azure provides built-in security features, like encryption and compliance certifications, to protect your data and applications.
+Azure Virtual Machines offer a flexible, scalable, and cost-effective solution for businesses needing computing resources without investing in physical hardware. They can be tailored to a wide range of needs, from simple testing environments to hosting large-scale, mission-critical applications.
+
+Storage:
+Azure offers a variety of storage services that cater to different data storage needs, from simple file storage to large-scale data archiving. Here’s a breakdown:
+Azure Storage Services Overview
+1.	Azure Blob Storage:
+o	What It Is: A service for storing unstructured data, like images, videos, and backups.
+o	Key Features:
+	Scalable: Handle massive amounts of data.
+	Accessible: Store any type of text or binary data, accessible over the internet.
+o	Use Case: Storing website images, backup files, or video content for streaming.
+2.	Azure File Storage:
+o	What It Is: A managed file share service that can be accessed via SMB (Server Message Block) protocol.
+o	Key Features:
+	File Sharing: Share files across multiple virtual machines or users.
+	Accessible: Mount it just like a network drive.
+o	Use Case: Centralized file storage for applications or shared files between teams.
+3.	Azure Disk Storage:
+o	What It Is: Provides high-performance, durable block storage for use with Azure VMs.
+o	Key Features:
+	Persistent Storage: Keep your data even if the VM is shut down.
+	High Performance: Ideal for applications that require fast data access.
+o	Use Case: Attaching disks to virtual machines for databases, applications, or other high-performance workloads.
+4.	Azure Queue Storage:
+o	What It Is: A service for storing large numbers of messages that can be accessed from anywhere in the world.
+o	Key Features:
+	Message Queuing: Decouple and scale components of your applications.
+	Reliability: Ensure messages are delivered even if the system fails temporarily.
+o	Use Case: Managing tasks or processing orders in an e-commerce application.
+5.	Azure Table Storage:
+Child of nosql,structure will change dynamically
+o	What It Is: A NoSQL key-value store for storing large amounts of structured, non-relational data.
+o	Key Features:
+	Simple Structure: Store data in a simple key-value format.
+	Scalable: Easily handle large amounts of structured data.
+o	Use Case: Storing user profiles, device information, or any other large-scale, structured data.
+Why Use Azure Storage Services?
+•	Scalability: Easily scale your storage needs up or down depending on your usage, ensuring you only pay for what you need.
+•	Security: Built-in encryption and compliance certifications to protect your data.
+•	Global Accessibility: Store and access your data from anywhere in the world through Azure’s global data centers.
+•	Integration: Seamlessly integrates with other Azure services, making it easier to build and manage your applications.
+Azure Storage Services provide versatile, secure, and scalable storage solutions that cater to a wide range of business needs, from simple file storage to complex data management systems.
