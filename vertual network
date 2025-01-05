@@ -1,0 +1,46 @@
+Virtual networks:
+Communication channel between resource  lanctued in the cloud
+Azure Virtual Networks (VNets) allow you to create a private, isolated network in the Azure cloud. This network can be used to securely connect and manage your Azure resources, such as Virtual Machines (VMs), databases, and other services.
+What is an Azure Virtual Network (VNet)?
+•	Private Networking: Azure VNets provide a private IP space that is isolated from the internet and other Azure VNets, giving you complete control over your network environment.
+•	Subnets: Within a VNet, you can create subnets to organize and segment your resources for better management and security.
+•	Connectivity Options: VNets can connect to on-premises networks, other VNets, or the internet using VPNs, ExpressRoute, or other services.
+•	Security: Use Network Security Groups (NSGs) and Azure Firewall to control inbound and outbound traffic to resources within the VNet.
+Steps to Create a Virtual Network in Azure
+Here’s a step-by-step guide on how to create an Azure VNet using the Azure portal:
+1. Sign in to the Azure Portal
+•	Go to https://portal.azure.com and sign in with your Azure account.
+2. Create a New Virtual Network
+•	In the Azure portal, select "Create a resource" from the left-hand menu.
+•	Search for "Virtual Network" and select it from the search results.
+•	Click on "Create" to start the creation process.
+3. Configure Basic Settings
+•	Subscription: Choose the Azure subscription you want to use.
+•	Resource Group: Either create a new resource group or select an existing one. Resource groups help organize related resources.
+•	Name: Give your VNet a name that reflects its purpose or the environment it supports.
+•	Region: Choose the Azure region where you want to create the VNet. The region determines where the VNet and its resources will be hosted.
+4. Configure IP Address Space
+•	IP Address Space: Define the address space for your VNet using CIDR notation (e.g., 10.0.0.0/16). This range will be used for assigning private IP addresses to resources within the VNet.
+•	Subnets: Create one or more subnets within the VNet by defining the subnet name and address range (e.g., 10.0.1.0/24). Subnets help organize and secure resources.
+5. Configure Security Settings
+•	DDoS Protection: Choose whether to enable DDoS protection for your VNet (optional).
+•	Firewall: Decide if you want to deploy an Azure Firewall within the VNet to control and monitor traffic.
+6. Review and Create
+•	Tags: Optionally, add tags to categorize your VNet (e.g., environment, department).
+•	Review and Create: Review all the settings you configured. If everything looks good, click "Create" to deploy the VNet.
+7. Deployment
+•	Azure will begin deploying your VNet. This usually takes a few seconds. Once done, you’ll get a notification that your VNet has been successfully created.
+8. Connect Resources to the VNet
+•	After the VNet is created, you can start connecting Azure resources like Virtual Machines (VMs), Azure SQL Database, and more to your VNet.
+•	When creating a VM, for example, you can select this VNet and its subnets to define where the VM will reside.
+Summary
+•	Azure Virtual Networks (VNets) are private networks that provide isolation, security, and connectivity for your Azure resources.
+•	Creating a VNet involves configuring the basic settings, IP address space, subnets, and security options in the Azure portal.
+•	After creating a VNet, you can connect and manage various Azure resources within it.
+This setup allows you to build secure, scalable, and well-organized network environments within the Azure cloud.
+Here are Azure Virtual Networks (VNets) explained in 5 simple points:
+1.	Private Networking: VNets create a private network in Azure, isolating your resources from the public internet.
+2.	Subnets: Divide your VNet into smaller networks (subnets) to organize and secure resources like Virtual Machines.
+3.	Secure Connectivity: Connect your VNet to on-premises networks or other VNets using VPNs or ExpressRoute.
+4.	Traffic Control: Use tools like Network Security Groups (NSGs) and Azure Firewall to manage and secure network traffic.
+5.	Global Reach: Deploy your VNet in any Azure region, providing flexibility and scalability for your global infrastructure needs.
