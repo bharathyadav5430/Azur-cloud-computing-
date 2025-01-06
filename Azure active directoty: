@@ -1,0 +1,101 @@
+Azure active directoty:
+1. Why We Use It:
+•	Centralized Identity Management: Azure AD manages user identities and access across multiple apps and services.
+•	Single Sign-On (SSO): Users can sign in once to access all their apps, reducing the need for multiple passwords.
+•	Security: Provides multi-factor authentication (MFA) to enhance security.
+•	Seamless Integration: Works with Microsoft 365, Azure services, and many third-party applications.
+•	Compliance: Helps organizations meet security and compliance requirements.
+2. What It Is Used For:
+•	User Authentication: Verify user identities when they log into apps or services.
+•	Access Management: Control who has access to what within your organization.
+•	Device Management: Manage and secure devices that access company resources.
+•	Application Management: Integrate and manage third-party and custom apps.
+•	Collaboration: Enable secure collaboration with external users (e.g., partners, clients).
+3. Key Features:
+•	User Groups: Organize users into groups for easier access management.
+•	Conditional Access: Set policies to control access based on conditions like location or device.
+•	Identity Protection: Detect and respond to potential identity threats.
+•	Self-Service Password Reset: Allow users to reset their passwords without IT support.
+•	Reporting and Monitoring: Get insights into sign-in activities and potential security risks.
+4. How to Use It:
+•	Set Up Users and Groups: Add users, create groups, and assign them to roles or apps.
+•	Configure SSO: Enable Single Sign-On for your apps so users can access everything with one login.
+•	Implement MFA: Set up multi-factor authentication to secure user logins.
+•	Create Access Policies: Define conditional access policies to control how and when users can access resources.
+•	Monitor Activity: Use Azure AD’s reporting tools to monitor sign-ins and detect unusual activities.
+5. Summary:
+•	Centralized Control: Azure AD simplifies and secures the management of user identities and access.
+•	Enhanced Security: Provides tools like MFA and Conditional Access to protect against unauthorized access.
+•	Seamless Experience: Users get a seamless sign-in experience across multiple apps and services.
+•	Flexibility: Integrates with a wide range of Microsoft and third-party apps.
+•	Compliance and Reporting: Helps organizations meet security standards and monitor access activities.
+Azure AD is a powerful tool for managing and securing identities in the cloud, ensuring that the right people have access to the right resources, with the right level of security.
+
+Kubernates:
+1)what is devops? 
+- devops is not a tool, devops is culture (or) process. - it is a process of continuous development, continuous build, continuous test, continuous release the software faster & reliable with automation tools. - it is a combination of development & operations. - this automation process is hapend between the development & IT Teams
+2) why we need devops? - main culture of devops is collaboration between teams (development & operations). - we can achieve the our goal fast & reliably. - to understand devops culture try to understand the previous models. – 
+every software company to develop an application (or) software it has 2 main teams. 1)development 2)operations (testing, monitoring,infrastructure)
+ Development:
+development team develop the application with some tools. eg: java based website - front end by UI team (html, CSS, JAVASCRIPT, JQUARY, ANGULARJS, REACTJS) - back end by JAVA developers (server side) - DB admins give access of DATABASE to the developers. - all people together develop an website. - integration the code. - unit test the code (developer self test). - for another process need to move the code into another environment (Testing, QA, etc..) (developers not doing this)
+IT Team (operatons): ------------------- -
+ IT Team is setup the required environment to the Development, Testing, QA, Pre-production, Production. eg: set up infrastructure for java website application. - setup the hardware - setup the platform (WINDOWS, LINUX, etc..) - setup the required applications for devlopers such JAVA, JAVA compiler, Tomcat, Databases, etc... - they move the code from one environment to another. - they monitor the infrastructure, etc.. - they test the code.
+Tradational development life cycle: ----------------------------------- - 
+tradationally to develop the software, waterfall model is their. Water Fall Model: ----------------- - It is a tradational SDLC(software development life cycle). - to develop an application some linear steps are their. 
+requirment -- gather information, what is purpose, documentation & planning | 
+design -- setup hardware & software |
+ implementation -- actual coding | 
+verification -- Integration | 
+maintaince -- deploy to customer - if any update is required you need to design this cycle again. - no return here. - bugs identify late. – 
+it takes months to complete a phase, for whole cycle takes min 2 years.
+ - for any changes start from 1st stage.
+Agile Method: ------------- - It is a SDLC(software development life cycle) into multiple iterations. ---- 1)planning -- | | |
+ 2)analysis 5)Testing | | | 4)build --3)design –
+ 1)plan for what you need 
+2)analysis your planning 
+3)design (actual coding)
+ 4)build (unit testing & building) 
+5)testing (integration and testing) - here we break the entire application into small pieces. - we can develop each piece in one iteration. - we can complete each iteration with in less time (min. 2 weeks)
+These models are only at development stage only. - if the code is moving into the another environment the code maybe fail. - due to infrastructure, versions of software, coding issues, testing problem ,etc... - here which team raise the issue is not found. - teams are pointing each other for that issues. - to deliver the product to the customers with prevent the mistakes Quality assurance is one way. - but still we have problem to overcome this DEVOPS culture is very useful.
+Advantages of DEVOPS: -------------------- - 
+software building & deployment with fast rate.
+ - application maintainence & bug fixing easy.
+ - release new features and versions of the applications in less time.
+ - higher product quality, faster productivity rate, increased customer satisfaction, more revenue and thus more profits. 
+- every tool is input of another tool. - we can get the feedback in this process.
+TOOLS involved in Devops Life-Cycle: ------------------------------------ 
+Containers:
+1.	Lightweight:
+o	Resource Usage: Containers share the host OS kernel and resources, making them more lightweight and faster to start.
+o	Efficiency: They have a smaller footprint and use fewer resources compared to VMs.
+2.	Portability:
+o	Consistent Environment: Containers package an application and its dependencies together, ensuring it runs the same way across different environments.
+o	Cross-Platform: Easily move containers between different environments, such as development, testing, and production.
+3.	Isolation:
+o	Process-Level Isolation: Containers provide process-level isolation within the same OS, which is less isolated than VMs but sufficient for many use cases.
+o	Shared Kernel: They share the same OS kernel but run in isolated user spaces.
+4.	Deployment Speed:i
+o	Fast Start-Up: Containers start almost instantly because they don’t need to boot up an entire OS.
+o	Rapid Scaling: Easily scale applications up or down with minimal overhead.
+5.	Use Cases:
+o	Microservices: Ideal for deploying microservices due to their lightweight and portable nature.
+o	DevOps and CI/CD: Frequently used in DevOps pipelines for consistent development and testing environments.
+Virtual Machines (VMs):
+1.	Heavyweight:
+o	Resource Usage: VMs run a full OS with its own kernel, which requires more resources and takes longer to start.
+o	Overhead: VMs have more overhead due to the need to virtualize the entire operating system.
+2.	Full OS Environment:
+o	Complete Isolation: Each VM runs a full OS, providing strong isolation from other VMs and the host system.
+o	Versatility: You can run different OSes on the same physical hardware, like Windows VMs alongside Linux VMs.
+3.	Deployment Speed:
+o	Slower Start-Up: VMs take longer to start because they need to boot up an entire OS.
+o	Resource Intensive: Scaling requires creating and booting new VMs, which can be slower compared to containers.
+4.	Security:
+o	Stronger Isolation: VMs offer stronger isolation as each VM has its own OS, making them suitable for running untrusted applications or different OS environments.
+5.	Use Cases:
+o	Legacy Applications: Suitable for running applications that require a full OS or specific OS configurations.
+o	Resource-Intensive Applications: Good for applications needing dedicated resources or those that can’t be easily containerized.
+Summary:
+•	Containers are lightweight, fast, and portable, making them ideal for microservices and modern application deployments.
+•	VMs offer full OS isolation and are better for applications requiring a complete OS or that need strong security isolation.
+Choosing between containers and VMs depends on your specific needs, such as resource requirements, isolation levels, and deployment speed.
