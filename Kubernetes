@@ -1,0 +1,50 @@
+What is Kubernetes:
+  Automates Container Management: Kubernetes automatically deploys, scales, and manages containerized applications, ensuring they run smoothly across a cluster of machines.
+  Self-Healing and Load Balancing: It automatically restarts failed containers, distributes network traffic, and scales applications up or down based on demand, providing high availability and reliability.
+Kubernetes Architecture in 5 Simple Points:
+Master Node:
+Control Plane: Manages the cluster and makes global decisions about scheduling, scaling, and deployment.
+Components: Includes the API server, scheduler, controller manager, and etcd (a key-value store for configuration data).
+API Server:
+Central Interface: The entry point for all API requests, managing communication between the control plane and worker nodes.
+Function: Handles API requests from users and internal components, ensuring they are processed and stored.
+Scheduler:
+Resource Assignment: Assigns containers to worker nodes based on resource availability and workload requirements.
+Function: Ensures containers are placed on nodes that have sufficient resources.
+Worker Nodes:
+Execution Hosts: Run the actual containers and manage application workloads.
+Components: Include Kubelet (agent that communicates with the master node), container runtime (e.g., Docker), and Kube-Proxy (manages network routing).
+Pods:
+Basic Unit of Deployment: The smallest deployable unit in Kubernetes, containing one or more containers that share the same network namespace and storage.
+Function: Encapsulates and runs the application containers and ensures they are scheduled and managed properly.
+Summary:
+Master Node: Manages the overall cluster and makes high-level decisions.
+Worker Nodes: Run containers and execute workloads.
+API Server, Scheduler, and Controller Manager: Handle communication, scheduling, and state management.
+Pods: Basic units that run containerized applications.
+Kubernetes architecture ensures efficient, scalable, and reliable management of containerized applications by coordinating the efforts of the master and worker nodes.
+  Kubelet manages containerized applications on each node, ensuring they run correctly and report their status to the Kubernetes control plane.
+  Kube-Proxy handles networking tasks, routing service requests to the appropriate Pods and balancing network traffic.
+**1. Pay-As-You-Go Pricing:
+Usage-Based: You pay for what you use, such as compute hours, storage space, and network bandwidth.
+No Upfront Costs: No long-term commitments or upfront payments are required; you are billed based on your actual usage.
+**2. Reserved Instances:
+Discounted Rates: Purchase reserved capacity for services like Virtual Machines (VMs) for a one- or three-year term to receive significant discounts compared to pay-as-you-go rates.
+Commitment: Requires an upfront commitment for the reserved term, which can result in cost savings.
+**3. Spot Instances:
+Bargain Pricing: Access unused Azure capacity at reduced rates. Ideal for workloads that are flexible and can tolerate interruptions.
+Variable Availability: Spot instances are not guaranteed and can be evicted with little notice if Azure needs the capacity.
+**4. Free Tier:
+Limited Usage: Azure offers a free tier with limited amounts of certain services, such as a small VM, limited storage, and a specific number of database transactions.
+No Cost: Suitable for testing and development purposes or small-scale applications.
+**5. Pricing Calculator:
+Cost Estimator: Use the Azure Pricing Calculator to estimate the cost of Azure services based on your specific requirements and configurations.
+Custom Estimates: Input details such as resource types, quantities, and regions to get a tailored cost estimate.
+Summary:
+Pay-As-You-Go: Pay based on actual usage without upfront costs.
+Reserved Instances: Get discounts by committing to use specific resources for a longer term.
+Spot Instances: Save costs with reduced pricing for flexible, interruptible workloads.
+Free Tier: Use limited free resources for testing and small projects.
+Pricing Calculator: Estimate costs with the Azure Pricing Calculator based on your needs.
+Understanding these pricing options can help you choose the most cost-effective approach for using Azure services based on your specific needs and usage patterns.
+
